@@ -6,7 +6,7 @@ function categories_TitikAcuan_14(feature, value, size, resolution, labelText,
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case 'BM':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.8 + size,
+        image: new ol.style.Circle({radius: 3.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(35,226,35,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
@@ -15,7 +15,7 @@ function categories_TitikAcuan_14(feature, value, size, resolution, labelText,
                     break;
 case 'Pengikat':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.8 + size,
+        image: new ol.style.Circle({radius: 3.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(205,69,62,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,

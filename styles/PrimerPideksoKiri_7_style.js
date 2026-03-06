@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_SaluranPrimerPideksoKiri_7(feature, value, size, resolution, labelText,
+function categories_PrimerPideksoKiri_7(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
@@ -14,7 +14,7 @@ function categories_SaluranPrimerPideksoKiri_7(feature, value, size, resolution,
                     break;
 case 'Saluran Tertutup':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(205,62,166,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
+        stroke: new ol.style.Stroke({color: 'rgba(224,48,145,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -22,14 +22,14 @@ case 'Saluran Tertutup':
                     break;
 case 'Saluran Trapesium':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(74,32,201,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,45,218,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;}};
 
-var style_SaluranPrimerPideksoKiri_7 = function(feature, resolution){
+var style_PrimerPideksoKiri_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -49,7 +49,7 @@ var style_SaluranPrimerPideksoKiri_7 = function(feature, resolution){
         labelText = String("");
     }
     
-    var style = categories_SaluranPrimerPideksoKiri_7(feature, value, size, resolution, labelText,
+    var style = categories_PrimerPideksoKiri_7(feature, value, size, resolution, labelText,
                             labelFont, labelFill, bufferColor,
                             bufferWidth, placement);
 
