@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_PrimerPideksoKiri_7(feature, value, size, resolution, labelText,
+function categories_SaluranPrimerPideksoKiri_7(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
@@ -29,7 +29,7 @@ case 'Saluran Trapesium':
     })];
                     break;}};
 
-var style_PrimerPideksoKiri_7 = function(feature, resolution){
+var style_SaluranPrimerPideksoKiri_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -49,7 +49,7 @@ var style_PrimerPideksoKiri_7 = function(feature, resolution){
         labelText = String("");
     }
     
-    var style = categories_PrimerPideksoKiri_7(feature, value, size, resolution, labelText,
+    var style = categories_SaluranPrimerPideksoKiri_7(feature, value, size, resolution, labelText,
                             labelFont, labelFill, bufferColor,
                             bufferWidth, placement);
 

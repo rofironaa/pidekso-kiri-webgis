@@ -97,23 +97,23 @@ var lyr_Sungai_6 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Sungai_6.png" /> Sungai'
             });
-var format_PrimerPideksoKiri_7 = new ol.format.GeoJSON();
-var features_PrimerPideksoKiri_7 = format_PrimerPideksoKiri_7.readFeatures(json_PrimerPideksoKiri_7, 
+var format_SaluranPrimerPideksoKiri_7 = new ol.format.GeoJSON();
+var features_SaluranPrimerPideksoKiri_7 = format_SaluranPrimerPideksoKiri_7.readFeatures(json_SaluranPrimerPideksoKiri_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_PrimerPideksoKiri_7 = new ol.source.Vector({
+var jsonSource_SaluranPrimerPideksoKiri_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_PrimerPideksoKiri_7.addFeatures(features_PrimerPideksoKiri_7);
-var lyr_PrimerPideksoKiri_7 = new ol.layer.Vector({
+jsonSource_SaluranPrimerPideksoKiri_7.addFeatures(features_SaluranPrimerPideksoKiri_7);
+var lyr_SaluranPrimerPideksoKiri_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_PrimerPideksoKiri_7, 
-                style: style_PrimerPideksoKiri_7,
-                popuplayertitle: 'PrimerPideksoKiri',
+                source:jsonSource_SaluranPrimerPideksoKiri_7, 
+                style: style_SaluranPrimerPideksoKiri_7,
+                popuplayertitle: 'Saluran Primer Pidekso Kiri',
                 interactive: true,
-    title: 'PrimerPideksoKiri<br />\
-    <img src="styles/legend/PrimerPideksoKiri_7_0.png" /> Saluran Tegak<br />\
-    <img src="styles/legend/PrimerPideksoKiri_7_1.png" /> Saluran Tertutup<br />\
-    <img src="styles/legend/PrimerPideksoKiri_7_2.png" /> Saluran Trapesium<br />' });
+    title: 'Saluran Primer Pidekso Kiri<br />\
+    <img src="styles/legend/SaluranPrimerPideksoKiri_7_0.png" /> Saluran Tegak<br />\
+    <img src="styles/legend/SaluranPrimerPideksoKiri_7_1.png" /> Saluran Tertutup<br />\
+    <img src="styles/legend/SaluranPrimerPideksoKiri_7_2.png" /> Saluran Trapesium<br />' });
 var format_Goronggorongsilang_8 = new ol.format.GeoJSON();
 var features_Goronggorongsilang_8 = format_Goronggorongsilang_8.readFeatures(json_Goronggorongsilang_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -225,18 +225,18 @@ var group_Bangunan = new ol.layer.Group({
                                 fold: 'open',
                                 title: 'Bangunan'});
 var group_Saluran = new ol.layer.Group({
-                                layers: [lyr_SaluranEksisting_4,lyr_SaluranIrigasi_5,lyr_Sungai_6,lyr_PrimerPideksoKiri_7,],
+                                layers: [lyr_SaluranEksisting_4,lyr_SaluranIrigasi_5,lyr_Sungai_6,lyr_SaluranPrimerPideksoKiri_7,],
                                 fold: 'open',
                                 title: 'Saluran'});
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_Satellite_1.setVisible(true);lyr_AreaLayanan_2.setVisible(true);lyr_Jalan_3.setVisible(true);lyr_SaluranEksisting_4.setVisible(true);lyr_SaluranIrigasi_5.setVisible(true);lyr_Sungai_6.setVisible(true);lyr_PrimerPideksoKiri_7.setVisible(true);lyr_Goronggorongsilang_8.setVisible(true);lyr_Goronggorong_9.setVisible(true);lyr_BangunanCorongan_10.setVisible(true);lyr_BangunanUkur_11.setVisible(true);lyr_BangunanTalang_12.setVisible(true);lyr_BangunanSadap_13.setVisible(true);lyr_TitikAcuan_14.setVisible(true);
+lyr_OpenStreetMap_0.setVisible(true);lyr_Satellite_1.setVisible(true);lyr_AreaLayanan_2.setVisible(true);lyr_Jalan_3.setVisible(true);lyr_SaluranEksisting_4.setVisible(true);lyr_SaluranIrigasi_5.setVisible(true);lyr_Sungai_6.setVisible(true);lyr_SaluranPrimerPideksoKiri_7.setVisible(true);lyr_Goronggorongsilang_8.setVisible(true);lyr_Goronggorong_9.setVisible(true);lyr_BangunanCorongan_10.setVisible(true);lyr_BangunanUkur_11.setVisible(true);lyr_BangunanTalang_12.setVisible(true);lyr_BangunanSadap_13.setVisible(true);lyr_TitikAcuan_14.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_Satellite_1,lyr_AreaLayanan_2,lyr_Jalan_3,group_Saluran,group_Bangunan,lyr_TitikAcuan_14];
 lyr_AreaLayanan_2.set('fieldAliases', {'Id': 'Id', 'AREA_DI': 'Area DI', 'LUAS__HA_': 'Luas (ha)', 'SUMBER_AIR': 'Sumber Air', 'KET__TAMBA': 'Ket Tambahan', 'Area Layan': 'Area Layanan', 'Petak': 'Petak', 'Luas': 'Luas (ha)', 'Q': 'Debit (lt/dt)', 'ambil': 'Pengambilan', });
 lyr_Jalan_3.set('fieldAliases', {'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'highway': 'highway', 'import': 'import', 'surface': 'surface', 'ref': 'ref', 'oneway': 'oneway', 'name': 'name', 'lanes': 'lanes', 'layer': 'layer', 'bridge': 'bridge', });
 lyr_SaluranEksisting_4.set('fieldAliases', {'LAYER': 'LAYER', 'GM_TYPE': 'GM_TYPE', 'ELEVATION': 'ELEVATION', 'Saluran': 'Saluran', });
 lyr_SaluranIrigasi_5.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'Nama_Unsur': 'Nama_Unsur', 'Nama_Objek': 'Nama_Objek', 'Shape_Leng': 'Shape_Leng', });
 lyr_Sungai_6.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'Nama_Unsur': 'Nama_Unsur', 'Nama_Objek': 'Nama_Objek', 'Shape_Leng': 'Shape_Leng', });
-lyr_PrimerPideksoKiri_7.set('fieldAliases', {'OBJECTID_1': 'OBJECTID_1', 'Tipikal': 'Tipikal', 'Nama': 'Nama', 'Panjang': 'Panjang', 'B': 'B (m)', 'H': 'H (m)', 'm': 'm', 'Ruas (km)': 'Ruas (km)', 'Patok': 'Patok', 'URL': 'URL', });
+lyr_SaluranPrimerPideksoKiri_7.set('fieldAliases', {'OBJECTID_1': 'OBJECTID_1', 'Tipikal': 'Tipikal', 'Nama': 'Nama', 'Panjang': 'Panjang', 'B': 'B (m)', 'H': 'H (m)', 'm': 'm', 'Ruas (km)': 'Ruas (km)', 'Patok': 'Patok', 'URL': 'URL', });
 lyr_Goronggorongsilang_8.set('fieldAliases', {'id': 'id', 'Bangunan': 'Bangunan', 'Nama': 'Nama', 'km': 'km', });
 lyr_Goronggorong_9.set('fieldAliases', {'id': 'id', 'Bangunan': 'Bangunan', 'Nama': 'Nama', 'km': 'km', 'Panjang (m': 'Panjang (m)', 'B (m)': 'B (m)', 'H (m)': 'H (m)', });
 lyr_BangunanCorongan_10.set('fieldAliases', {'id': 'id', 'Bangunan': 'Bangunan', 'Nama': 'Nama', 'km': 'km', 'B Pintu': 'B Pintu', 'h pintu': 'H Pintu', 'Q (lt/dt)': 'Debit (lt/dt)', 'A (km)': 'Area (ha)', });
@@ -249,7 +249,7 @@ lyr_Jalan_3.set('fieldImages', {'full_id': 'TextEdit', 'osm_id': 'TextEdit', 'os
 lyr_SaluranEksisting_4.set('fieldImages', {'LAYER': 'TextEdit', 'GM_TYPE': 'TextEdit', 'ELEVATION': 'TextEdit', 'Saluran': 'TextEdit', });
 lyr_SaluranIrigasi_5.set('fieldImages', {'OBJECTID': 'TextEdit', 'Nama_Unsur': 'TextEdit', 'Nama_Objek': 'TextEdit', 'Shape_Leng': 'TextEdit', });
 lyr_Sungai_6.set('fieldImages', {'OBJECTID': 'TextEdit', 'Nama_Unsur': 'TextEdit', 'Nama_Objek': 'TextEdit', 'Shape_Leng': 'TextEdit', });
-lyr_PrimerPideksoKiri_7.set('fieldImages', {'OBJECTID_1': 'TextEdit', 'Tipikal': 'TextEdit', 'Nama': 'TextEdit', 'Panjang': 'TextEdit', 'B': 'TextEdit', 'H': 'TextEdit', 'm': 'TextEdit', 'Ruas (km)': 'TextEdit', 'Patok': 'TextEdit', 'URL': 'ExternalResource', });
+lyr_SaluranPrimerPideksoKiri_7.set('fieldImages', {'OBJECTID_1': 'TextEdit', 'Tipikal': 'TextEdit', 'Nama': 'TextEdit', 'Panjang': 'TextEdit', 'B': 'TextEdit', 'H': 'TextEdit', 'm': 'TextEdit', 'Ruas (km)': 'TextEdit', 'Patok': 'TextEdit', 'URL': 'ExternalResource', });
 lyr_Goronggorongsilang_8.set('fieldImages', {'id': 'TextEdit', 'Bangunan': 'TextEdit', 'Nama': 'TextEdit', 'km': 'TextEdit', });
 lyr_Goronggorong_9.set('fieldImages', {'id': 'TextEdit', 'Bangunan': 'TextEdit', 'Nama': 'TextEdit', 'km': 'TextEdit', 'Panjang (m': 'TextEdit', 'B (m)': 'TextEdit', 'H (m)': 'TextEdit', });
 lyr_BangunanCorongan_10.set('fieldImages', {'id': 'TextEdit', 'Bangunan': 'TextEdit', 'Nama': 'TextEdit', 'km': 'TextEdit', 'B Pintu': 'TextEdit', 'h pintu': 'TextEdit', 'Q (lt/dt)': 'TextEdit', 'A (km)': 'TextEdit', });
@@ -262,7 +262,7 @@ lyr_Jalan_3.set('fieldLabels', {'full_id': 'hidden field', 'osm_id': 'hidden fie
 lyr_SaluranEksisting_4.set('fieldLabels', {'LAYER': 'hidden field', 'GM_TYPE': 'hidden field', 'ELEVATION': 'hidden field', 'Saluran': 'hidden field', });
 lyr_SaluranIrigasi_5.set('fieldLabels', {'OBJECTID': 'hidden field', 'Nama_Unsur': 'hidden field', 'Nama_Objek': 'hidden field', 'Shape_Leng': 'hidden field', });
 lyr_Sungai_6.set('fieldLabels', {'OBJECTID': 'hidden field', 'Nama_Unsur': 'hidden field', 'Nama_Objek': 'hidden field', 'Shape_Leng': 'hidden field', });
-lyr_PrimerPideksoKiri_7.set('fieldLabels', {'OBJECTID_1': 'hidden field', 'Tipikal': 'inline label - visible with data', 'Nama': 'inline label - visible with data', 'Panjang': 'hidden field', 'B': 'inline label - visible with data', 'H': 'inline label - visible with data', 'm': 'inline label - visible with data', 'Ruas (km)': 'inline label - visible with data', 'Patok': 'hidden field', 'URL': 'inline label - visible with data', });
+lyr_SaluranPrimerPideksoKiri_7.set('fieldLabels', {'OBJECTID_1': 'hidden field', 'Tipikal': 'inline label - visible with data', 'Nama': 'inline label - visible with data', 'Panjang': 'hidden field', 'B': 'inline label - visible with data', 'H': 'inline label - visible with data', 'm': 'inline label - visible with data', 'Ruas (km)': 'inline label - visible with data', 'Patok': 'hidden field', 'URL': 'inline label - visible with data', });
 lyr_Goronggorongsilang_8.set('fieldLabels', {'id': 'hidden field', 'Bangunan': 'inline label - visible with data', 'Nama': 'inline label - visible with data', 'km': 'inline label - visible with data', });
 lyr_Goronggorong_9.set('fieldLabels', {'id': 'hidden field', 'Bangunan': 'inline label - visible with data', 'Nama': 'inline label - visible with data', 'km': 'inline label - visible with data', 'Panjang (m': 'inline label - visible with data', 'B (m)': 'inline label - visible with data', 'H (m)': 'inline label - visible with data', });
 lyr_BangunanCorongan_10.set('fieldLabels', {'id': 'hidden field', 'Bangunan': 'inline label - visible with data', 'Nama': 'inline label - visible with data', 'km': 'inline label - visible with data', 'B Pintu': 'inline label - visible with data', 'h pintu': 'inline label - visible with data', 'Q (lt/dt)': 'inline label - visible with data', 'A (km)': 'inline label - visible with data', });
