@@ -236,7 +236,7 @@ lyr_Jalan_3.set('fieldAliases', {'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_
 lyr_SaluranEksisting_4.set('fieldAliases', {'LAYER': 'LAYER', 'GM_TYPE': 'GM_TYPE', 'ELEVATION': 'ELEVATION', 'Saluran': 'Saluran', });
 lyr_SaluranIrigasi_5.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'Nama_Unsur': 'Nama_Unsur', 'Nama_Objek': 'Nama_Objek', 'Shape_Leng': 'Shape_Leng', });
 lyr_Sungai_6.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'Nama_Unsur': 'Nama_Unsur', 'Nama_Objek': 'Nama_Objek', 'Shape_Leng': 'Shape_Leng', });
-lyr_SaluranPrimerPideksoKiri_7.set('fieldAliases', {'OBJECTID_1': 'OBJECTID_1', 'Tipikal': 'Tipikal', 'Nama': 'Nama', 'Panjang': 'Panjang', 'B': 'B (m)', 'H': 'H (m)', 'm': 'm', 'Ruas (km)': 'Ruas (km)', 'Patok': 'Patok', 'URL': 'URL', });
+lyr_SaluranPrimerPideksoKiri_7.set('fieldAliases', {'OBJECTID_1': 'OBJECTID_1', 'Tipikal': 'Tipikal', 'Nama': 'Nama', 'Panjang': 'Panjang', 'B': 'B (m)', 'H': 'H (m)', 'm': 'm', 'Ruas (km)': 'Ruas (km)', 'Patok': 'Patok', 'URL': 'Foto', });
 lyr_Goronggorongsilang_8.set('fieldAliases', {'id': 'id', 'Bangunan': 'Bangunan', 'Nama': 'Nama', 'km': 'km', });
 lyr_Goronggorong_9.set('fieldAliases', {'id': 'id', 'Bangunan': 'Bangunan', 'Nama': 'Nama', 'km': 'km', 'Panjang (m': 'Panjang (m)', 'B (m)': 'B (m)', 'H (m)': 'H (m)', });
 lyr_BangunanCorongan_10.set('fieldAliases', {'id': 'id', 'Bangunan': 'Bangunan', 'Nama': 'Nama', 'km': 'km', 'B Pintu': 'B Pintu', 'h pintu': 'H Pintu', 'Q (lt/dt)': 'Debit (lt/dt)', 'A (km)': 'Area (ha)', });
