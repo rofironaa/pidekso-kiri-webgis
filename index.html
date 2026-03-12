@@ -12,6 +12,50 @@
         <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
         <style>
+
+        /* Style untuk latar belakang modal */
+.welcome-modal {
+    display: flex;
+    position: fixed;
+    z-index: 9999; /* Pastikan di atas peta */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style kotak konten modal */
+.welcome-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.welcome-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.welcome-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.welcome-content button:hover {
+    background-color: #0056b3;
+}
+
         html, body {
             background-color: #ffffff;
         }
@@ -46,6 +90,14 @@
         <title></title>
     </head>
     <body>
+<div id="welcomeModal" class="welcome-modal">
+    <div class="welcome-content">
+        <h2>Selamat Datang!</h2>
+        <p>Selamat datang di WebGIS D.I. Pidekso Kiri. Yuk mulai eksplorasi data irigasi dan area layanan kami 😊</p>
+        <button onclick="closeModal()">Mulai Eksplorasi</button>
+    </div>
+</div>
+
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
@@ -62,5 +114,19 @@
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>        
+    
+    <script>
+    function closeModal() {
+        document.getElementById('welcomeModal').style.display = 'none';
+    }
+    
+    // Opsional: Menutup modal jika user klik di luar kotak putih
+    window.onclick = function(event) {
+        var modal = document.getElementById('welcomeModal');
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
     </body>
 </html>
