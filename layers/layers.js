@@ -222,11 +222,11 @@ var lyr_TitikAcuan_14 = new ol.layer.Vector({
     <img src="styles/legend/TitikAcuan_14_1.png" /> Pengikat<br />' });
 var group_Bangunan = new ol.layer.Group({
                                 layers: [lyr_Goronggorongsilang_8,lyr_Goronggorong_9,lyr_BangunanCorongan_10,lyr_BangunanUkur_11,lyr_BangunanTalang_12,lyr_BangunanSadap_13,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'Bangunan'});
 var group_Saluran = new ol.layer.Group({
                                 layers: [lyr_SaluranEksisting_4,lyr_SaluranIrigasi_5,lyr_Sungai_6,lyr_SaluranPrimerPideksoKiri_7,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'Saluran'});
 
 lyr_OpenStreetMap_0.setVisible(true);lyr_Satellite_1.setVisible(true);lyr_AreaLayanan_2.setVisible(true);lyr_Jalan_3.setVisible(true);lyr_SaluranEksisting_4.setVisible(true);lyr_SaluranIrigasi_5.setVisible(true);lyr_Sungai_6.setVisible(true);lyr_SaluranPrimerPideksoKiri_7.setVisible(true);lyr_Goronggorongsilang_8.setVisible(true);lyr_Goronggorong_9.setVisible(true);lyr_BangunanCorongan_10.setVisible(true);lyr_BangunanUkur_11.setVisible(true);lyr_BangunanTalang_12.setVisible(true);lyr_BangunanSadap_13.setVisible(true);lyr_TitikAcuan_14.setVisible(true);
