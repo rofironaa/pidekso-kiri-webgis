@@ -14,12 +14,6 @@
         <style>
         html, body {
             background-color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column; /* Mengatur susunan vertikal antara header dan peta */
         }
         .ol-control > * {
             background-color: #f8f8f8!important;
@@ -42,48 +36,16 @@
         </style>
 
         <style>
-        /* --- TAMPILAN HEADER PROFESIONAL --- */
-        .webgis-header {
-            background-color: #1e293b; /* Warna gelap premium (Slate 800) */
-            color: #ffffff;
-            padding: 12px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            z-index: 1000;
-        }
-        .webgis-title {
-            font-size: 18px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            margin: 0;
-        }
-        .webgis-subtitle {
-            font-size: 12px;
-            color: #94a3b8; /* Warna teks sekunder (Slate 400) */
-            margin: 0;
-            font-weight: 400;
-        }
-
-        /* --- PENYESUAIAN AREA PETA --- */
-        #map {
-            flex: 1; /* Peta akan otomatis mengambil sisa ruang layar */
+        html, body, #map {
             width: 100%;
+            height: 100%;
             padding: 0;
             margin: 0;
         }
         </style>
-        <title>WEBGIS Saluran Irigasi Pidekso Kiri</title>
+        <title></title>
     </head>
     <body>
-        <header class="webgis-header">
-            <div>
-                <h1 class="webgis-title">WEBGIS Jaringan Irigasi D.I Pidekso Kiri</h1>
-                <p class="webgis-subtitle">Sistem Informasi Geografis Infrastruktur Irigasi</p>
-            </div>
-        </header>
-
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
